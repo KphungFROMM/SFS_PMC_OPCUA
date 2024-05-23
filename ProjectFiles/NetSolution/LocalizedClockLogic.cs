@@ -13,6 +13,8 @@ using FTOptix.WebUI;
 using FTOptix.AuditSigning;
 using FTOptix.DataLogger;
 using FTOptix.Alarm;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class LocalizedClockLogic : BaseNetLogic

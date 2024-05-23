@@ -12,6 +12,7 @@ using FTOptix.Retentivity;
 using FTOptix.RAEtherNetIP;
 using FTOptix.OPCUAServer;
 using FTOptix.Alarm;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class LoginChangePasswordFormOutputMessageLogic : BaseNetLogic

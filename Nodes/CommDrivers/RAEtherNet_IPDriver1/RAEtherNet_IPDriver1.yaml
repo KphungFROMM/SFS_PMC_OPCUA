@@ -1,0 +1,4 @@
+Name: RAEtherNet_IPDriver1
+Type: RAEtherNetIPDriver
+Children:
+- File: PMC_V37/PMC_V37.yaml

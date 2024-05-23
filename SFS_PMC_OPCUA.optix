@@ -65,16 +65,40 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 1.0
+  17:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 2.0
+  18:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 2.0
+  19:
+   Uri: 'urn:FTOptix:RAEtherNetIP'
+   Module: FTOptix.RAEtherNetIP
+   Version: 2.1
+  20:
+   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
+   Module: FTOptix.RAEtherNetIP.Net
+   Version: 2.1
+  21:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
+  22:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.1
  Statistics:
-  TotalNodeCount: 2696
-  Objects: 603
+  TotalNodeCount: 3338
+  Objects: 690
   ObjectTypes: 22
-  Variables: 2061
-  VariableTypes: 0
-  DataTypes: 0
+  Variables: 2608
+  VariableTypes: 4
+  DataTypes: 4
   Methods: 10
-  References: 54
+  References: 60
   ReferenceTypes: 0
-  Files: 27
+  Files: 33
  Nodes:
  - File: Nodes/SFS_PMC_OPCUA.yaml

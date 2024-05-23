@@ -2287,7 +2287,7 @@ Children:
                 - Name: PageName
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  Value: {"LocaleId":"en-US","Text":"Main"}
+                  Value: {"LocaleId":"en-US","Text":"OPC UA"}
                 - Name: PageSelected
                   Type: BaseDataVariableType
                   DataType: Boolean
@@ -2646,11 +2646,11 @@ Children:
     - Name: CompanyLogo
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=16;%PROJECTDIR%/Graphics/FrommConnect Horizontal dropshadow.png"
+      Value: "ns=16;%PROJECTDIR%/Graphics/CompanyLogo.png"
     - Name: CompanyName
       Type: BaseDataVariableType
       DataType: String
-      Value: "FrommConnect"
+      Value: "SFS"
     - Name: TimePointer
       Type: BaseDataVariableType
       DataType: String

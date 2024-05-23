@@ -5,3 +5,304 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
+- Name: PMCState
+  Id: g=43fe8ab2559c9616c2a6b580bb44948b
+  Type: BaseObjectType
+  Children:
+  - Name: ControlVoltage
+    Id: g=27d33e688921533855a6d9abd676620c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Id: g=a78b491d429e92cefab2ab0c64aaebc5
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/PowerOn"
+      Children:
+      - Name: Mode
+        Id: g=d95062e1be287bfc80ea619f8e2d42d9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: OperationModePLC
+    Id: g=c9d4a2b831d031eaf511ce4eb395ecc9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=8365600ca92e1eca58cff3b915bf506f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/PressMode/Number"
+      Children:
+      - Name: Mode
+        Id: g=3b9f9426fb9cd3bd8653da01842f1c8c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: TotalPartsDaily
+    Id: g=211befc05fad88df719328ce642c89a9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=4e4d485b8d9e634d341e6014427e1eb9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/DayPartCounter/ACC"
+      Children:
+      - Name: Mode
+        Id: g=608f605e8a0dde0650464273d9e9f47c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: TotalPartsWeekly
+    Id: g=b05a31b2af326f8a5916c8f50392668a
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=e9cf5a00884b363cbdd91368651ff6f2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/WeekPartCounter/ACC"
+      Children:
+      - Name: Mode
+        Id: g=0c971f8ddf4397f16b3a3f926efa6a55
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: OperationStatus
+    Id: g=5b4052d9984f843a5d7099a1aa3f0771
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=9e1decbd6cadeb6daebe8abc736c7a08
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/PressStatus/Number"
+      Children:
+      - Name: Mode
+        Id: g=10d1f2d7ec5212003a88276a6e3de742
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+- Name: PMCErrors
+  Id: g=26b1baf4e68cd1d2dc0209b77fa91210
+  Type: BaseObjectType
+  Children:
+  - Name: TaskID
+    Id: g=8367be4a696094843bf741526e80205d
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=6b603b957cdd671eadb9b680c64413c4
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/TaskID"
+      Children:
+      - Name: Mode
+        Id: g=d53f0c13141d62717f99d2ce7a0cbe85
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: EventType
+    Id: g=14f6b24fec26fb9d5e4b416f9d4d9d18
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=42278ea37db1958b69c0988151361951
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/EventType"
+      Children:
+      - Name: Mode
+        Id: g=db8f8e9f12d9a80299ff47d5024ab01c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: State
+    Id: g=b2a781ce94bcda80f0a9d5130a57a40d
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=56ccab421576102fd355741178c5da8d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/State"
+      Children:
+      - Name: Mode
+        Id: g=b20f80d6ce04c138f5a691f22c025753
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: EventID
+    Id: g=bac362819ca8a21ab9f4be8d7ab06f34
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=ec05509da5885a56022d4f842e014c34
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/EventType"
+      Children:
+      - Name: Mode
+        Id: g=ea61516cfff2db9e63999c17cfa35622
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DateTimeYear
+    Id: g=66ab7b2dd5c5eae65bd5b47cd1da66e4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=a3ca44bddb325c25c14aef2b1116340f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/DateTimeValue[0]"
+      Children:
+      - Name: Mode
+        Id: g=d42065c9ff4f28565045e4729a562ac6
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Priority
+    Id: g=821935390f840a9eb00a845ebf92c4c6
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=a31b02866703db4cfe9a700e8e61c165
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/Priority"
+      Children:
+      - Name: Mode
+        Id: g=67caa2b3a651df062b45980566fc248a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DateTimeMonth
+    Id: g=ccc88ddff3f1251441fa6ca768d6fded
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=644e384a894615bbc8b865f9e9690856
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/DateTimeValue[1]"
+      Children:
+      - Name: Mode
+        Id: g=fe50701610bfd9900293f79ffab57908
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DateTimeDay
+    Id: g=98a830159d65d5b9aaa5b9af4d29f1b9
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=7a0e480138fac7dcda400bd7961f9aad
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/DateTimeValue[2]"
+      Children:
+      - Name: Mode
+        Id: g=dc01b59a5b2b3dd1988fdbda452cc5ac
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DateTimeHour
+    Id: g=409b82fca958520284ab8af7ac8ef18d
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=c5cc2da809b342c12d12db666667f79a
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/DateTimeValue[3]"
+      Children:
+      - Name: Mode
+        Id: g=206cc78e3e92270315b0923a053324b8
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DateTimeMinute
+    Id: g=ae84d1af09c061aa3f3ed52cca2d5d82
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=17af171dcb49c97da0490b99bf34c591
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/DateTimeValue[4]"
+      Children:
+      - Name: Mode
+        Id: g=ce627803e78911b7f68c9b9b248e90f4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: DateTimeSecond
+    Id: g=152efb94ccbef6d0563edf23ca877463
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Id: g=8172365d0ff20bb67c57e77139c20fc7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/Tags/Controller Tags/ReasonForLastStop/DateTimeValue[5]"
+      Children:
+      - Name: Mode
+        Id: g=f3457a314ba9b6cc4f26ccc1f78fd2d8
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+- Name: PMCComms
+  Id: g=639a27495ae5e2d6b3dc8d70c32867bb
+  Type: BaseObjectType
+  Children:
+  - Name: PLCCommsStatus
+    Id: g=80e395ed523becbe4a05cd0d017e9af4
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Id: g=b158dd7c6c4b20e2533eeaa262dd2436
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/PMC_V37/OperationCode"
+      Children:
+      - Name: Mode
+        Id: g=ab4f5468f51c8371fa398911de325703
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

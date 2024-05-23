@@ -8,6 +8,9 @@ using FTOptix.UI;
 using FTOptix.WebUI;
 using System.Linq;
 using FTOptix.Alarm;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class EditUserDetailPanelLogic : BaseNetLogic

@@ -11,6 +11,9 @@ using FTOptix.Core;
 using FTOptix.NetLogic;
 using FTOptix.System;
 using FTOptix.Alarm;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class AlarmIconLogic2 : BaseNetLogic

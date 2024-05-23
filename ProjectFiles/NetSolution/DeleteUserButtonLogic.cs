@@ -6,6 +6,9 @@ using FTOptix.UI;
 using System.Linq;
 using FTOptix.WebUI;
 using FTOptix.Alarm;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class DeleteUserButtonLogic : BaseNetLogic

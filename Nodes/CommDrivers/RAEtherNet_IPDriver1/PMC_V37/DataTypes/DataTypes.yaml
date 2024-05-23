@@ -1,0 +1,294 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: ReasonForLastStop_TYP
+  Id: g=39e6723668c1a9535654b8ac491c3c32
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "ReasonForLastStop_TYP",
+    "DataType": {
+     "IdType": 2,
+     "Id": "39e6723668c1a9535654b8ac491c3c32",
+     "Namespace": 16
+    },
+    "Fields": [{
+      "Name": "DateTimeValue",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "EventID",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "EventType",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Priority",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "State",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "TaskID",
+      "DataType": {
+       "Id": 4
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"ReasonForLastStop_TYP"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: PressMode_TYP
+  Id: g=9b8a6d06b35569e12fe21b04d3733ab3
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "PressMode_TYP",
+    "DataType": {
+     "IdType": 2,
+     "Id": "9b8a6d06b35569e12fe21b04d3733ab3",
+     "Namespace": 16
+    },
+    "Fields": [{
+      "Name": "AbsEncoderAdj",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AutoSingleStroke",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Bar",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cont_AutoSS_COD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Continuous",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ContOnDemand",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DieChange",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Handwheel",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InAProdCountMode",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MicroInch",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ModeChangeHoldout",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Number",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Off",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Origin",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Pendulum",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PosTDC",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SetEncoder",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Setup",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SingleStroke",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SingleStrokeCapable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SinglStrokeCfgFlt",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "StrokeChange",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"PressMode_TYP"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: PressStatus_TYP
+  Id: g=798f2e93ee846560fe80468d2de2c371
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "PressStatus_TYP",
+    "DataType": {
+     "IdType": 2,
+     "Id": "798f2e93ee846560fe80468d2de2c371",
+     "Namespace": 16
+    },
+    "Fields": [{
+      "Name": "Armed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ClutchEngaged",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "NotReady",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Number",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Ready",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"PressStatus_TYP"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: COUNTER
+  Id: g=4d2f51a0d0ece6c2ad422eb54681354c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "COUNTER",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4d2f51a0d0ece6c2ad422eb54681354c",
+     "Namespace": 16
+    },
+    "Fields": [{
+      "Name": "ACC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "CD",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "CU",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "DN",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OV",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "PRE",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "UN",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"COUNTER"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
