@@ -1,0 +1,25 @@
+Name: Roles
+Id: g=168315c4ba704e70bb13e35de715eb03
+Type: RolesCategoryFolder
+Children:
+- Name: AdminRole
+  Id: g=b1ca9a9994beec8337a91dc601675280
+  Type: ns=1;RoleType
+- Name: EngineerRole
+  Id: g=b318eb733f67b511d76725cd440a4f42
+  Type: ns=1;RoleType
+- Name: MaintenanceRole
+  Id: g=aac3539f867808cd7fcdc7aa43b17e05
+  Type: ns=1;RoleType
+- Name: Operator1Role
+  Id: g=dc1454dbd61cb3a6325f92e6e9c97f19
+  Type: ns=1;RoleType
+- Name: Operator2Role
+  Id: g=f1feb750b2bc154fe4d657f65c0b4fdd
+  Type: ns=1;RoleType
+- Name: Operator3Role
+  Id: g=8aff2742dc28da00dad142ae104d0c01
+  Type: ns=1;RoleType
+- Name: Operator4Role
+  Id: g=58879334d410d4892e54371e107394de
+  Type: ns=1;RoleType

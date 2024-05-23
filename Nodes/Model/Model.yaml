@@ -1,0 +1,7 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: MenuOpenedAux
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

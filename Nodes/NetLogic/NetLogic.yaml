@@ -1,0 +1,27 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: LocalizedClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: CurrentLocale
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: LocalizedTime
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: LocalizedDate
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
