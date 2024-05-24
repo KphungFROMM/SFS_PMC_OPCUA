@@ -1,3 +1,50 @@
 Name: Alarms
 Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
+Children:
+- Name: 'ALM-001'
+  Id: g=6fe91dc23cc02aeb92d24fe852df9079
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=ad05ad5464c5d7694cf5d3704683dd79
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: InputValue
+    Id: g=eb5a6318ee318c3773016e4ce83325d5
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=cbfef9fc7ba675ff081a333771350814
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/PMCComms/PLCCommsStatus"
+      Children:
+      - Name: Mode
+        Id: g=f6d88bd1c415b66de3d99e977737392d
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=43aa822e6e5a7f3bd63b7e9721760c56
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=5418d8020e5b8efaef188cb2553e9bb4
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"PMC V37 PLC Connection Lost"}

@@ -25,3 +25,25 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+- Name: ApplicationHeartbeat
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Heartbeat
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/PMCComms/OPCUAServerHeartBeat"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: HeartbeatRate
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 750

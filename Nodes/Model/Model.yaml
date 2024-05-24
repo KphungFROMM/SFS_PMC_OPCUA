@@ -306,3 +306,8 @@ Children:
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
+  - Name: OPCUAServerHeartBeat
+    Id: g=9bf0cfcb033f33610a976539d3a8a8e8
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

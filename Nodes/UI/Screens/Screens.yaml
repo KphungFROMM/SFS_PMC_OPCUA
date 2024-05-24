@@ -60,7 +60,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 350.0
+          Value: 360.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -830,7 +830,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 350.0
+          Value: 360.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -1461,7 +1461,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "/Objects/SFS_PMC_OPCUA/OPC-UA/OPCUAServer/NodesToPublish/Configuration1/Nodes/Node2/DateTimeSecond@Value"
+                    Value: "/Objects/SFS_PMC_OPCUA/OPC-UA/OPCUAServer/NodesToPublish/Configuration1/Nodes/Node2/DateTimeMinute@Value"
                 - Name: ns=3;Source6
                   Type: BaseDataVariableType
                   DataType: BaseDataType
@@ -1470,7 +1470,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "/Objects/SFS_PMC_OPCUA/OPC-UA/OPCUAServer/NodesToPublish/Configuration1/Nodes/Node2/DateTimeMonth@Value"
+                    Value: "/Objects/SFS_PMC_OPCUA/OPC-UA/OPCUAServer/NodesToPublish/Configuration1/Nodes/Node2/DateTimeSecond@Value"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -1588,3 +1588,112 @@ Children:
               DataType: HorizontalAlignment
               ModellingRule: Optional
               Value: 0
+          - Name: PMCOPCHeartbeatLabel
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: StringFormatter1
+                Type: StringFormatter
+                Children:
+                - Name: Format
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"{0} - {1}"}
+                - Name: ns=3;Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/SFS_PMC_OPCUA/OPC-UA/OPCUAServer/NodesToPublish/Configuration1/Nodes/Node3/OPCUAServerHeartBeat@BrowseName"
+                - Name: ns=3;Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/SFS_PMC_OPCUA/OPC-UA/OPCUAServer/NodesToPublish/Configuration1/Nodes/Node3/OPCUAServerHeartBeat@Value"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 0
+      - Name: NotchedRightArrow1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 75.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 75.0
+        - Name: shape
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=16;%PROJECTDIR%/res/NotchedRightArrow_shape.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 17.996000289916992
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 18.0
+        - Name: OriginalWidth
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 17.996000289916992
+        - Name: OriginalHeight
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 18.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2

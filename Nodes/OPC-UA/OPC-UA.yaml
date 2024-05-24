@@ -58,6 +58,20 @@ Children:
             Value: 2
       - Name: Users
         Type: BaseObjectType
+        Children:
+        - Name: User1
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Users/Anonymous"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 0
       - Name: PublishDynamicConfiguration
         Type: BaseDataVariableType
         DataType: Boolean
