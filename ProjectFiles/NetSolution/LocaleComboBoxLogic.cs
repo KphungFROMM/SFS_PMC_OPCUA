@@ -10,6 +10,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.Alarm;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.WebUI;
 #endregion
 
 public class LocaleComboBoxLogic : BaseNetLogic

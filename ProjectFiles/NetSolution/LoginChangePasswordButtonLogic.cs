@@ -13,6 +13,7 @@ using FTOptix.RAEtherNetIP;
 using FTOptix.OPCUAServer;
 using FTOptix.Alarm;
 using FTOptix.CommunicationDriver;
+using FTOptix.WebUI;
 #endregion
 
 public class LoginChangePasswordButtonLogic : BaseNetLogic

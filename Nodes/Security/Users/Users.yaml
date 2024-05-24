@@ -47,3 +47,8 @@ Children:
   - Class: Reference
     Type: HasGroup
     Target: g=9044ef6168eba42d65415439a343d8cb
+  - Name: EMail
+    Id: g=4c2d2580337b67f17abe5b630ffc83a1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0

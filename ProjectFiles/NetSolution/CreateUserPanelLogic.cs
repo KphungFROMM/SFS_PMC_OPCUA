@@ -10,6 +10,7 @@ using FTOptix.Alarm;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 #endregion
 
 public class CreateUserPanelLogic : BaseNetLogic
