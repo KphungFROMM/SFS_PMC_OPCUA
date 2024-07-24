@@ -1,6 +1,14 @@
 Name: Controller Tags
 Type: FolderType
 Children:
+- Name: PowerOn
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PowerOn"
 - Name: DayPartCounter
   Type: COUNTER
   DataType: COUNTER
@@ -8,7 +16,6 @@ Children:
   - Name: ACC
     Type: RAEtherNetIPTag
     DataType: Int32
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -17,7 +24,6 @@ Children:
   - Name: CD
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -26,7 +32,6 @@ Children:
   - Name: CU
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -35,7 +40,6 @@ Children:
   - Name: DN
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -44,7 +48,6 @@ Children:
   - Name: OV
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -53,7 +56,6 @@ Children:
   - Name: PRE
     Type: RAEtherNetIPTag
     DataType: Int32
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -62,232 +64,11 @@ Children:
   - Name: UN
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
       Value: "DayPartCounter.UN"
-- Name: PowerOn
-  Type: RAEtherNetIPTag
-  DataType: Boolean
-  Value: false
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "PowerOn"
-- Name: PressMode
-  Type: PressMode_TYP
-  DataType: PressMode_TYP
-  Children:
-  - Name: AbsEncoderAdj
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.AbsEncoderAdj"
-  - Name: AutoSingleStroke
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.AutoSingleStroke"
-  - Name: Bar
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Bar"
-  - Name: Cont_AutoSS_COD
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Cont_AutoSS_COD"
-  - Name: Continuous
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Continuous"
-  - Name: ContOnDemand
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.ContOnDemand"
-  - Name: DieChange
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.DieChange"
-  - Name: Handwheel
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Handwheel"
-  - Name: InAProdCountMode
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.InAProdCountMode"
-  - Name: Inch
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Inch"
-  - Name: MicroInch
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.MicroInch"
-  - Name: ModeChangeHoldout
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.ModeChangeHoldout"
-  - Name: Number
-    Type: RAEtherNetIPTag
-    DataType: Int16
-    Value: 0
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Number"
-  - Name: Off
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Off"
-  - Name: Origin
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Origin"
-  - Name: Pendulum
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Pendulum"
-  - Name: PosTDC
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.PosTDC"
-  - Name: SetEncoder
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.SetEncoder"
-  - Name: Setup
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.Setup"
-  - Name: SingleStroke
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.SingleStroke"
-  - Name: SingleStrokeCapable
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.SingleStrokeCapable"
-  - Name: SinglStrokeCfgFlt
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.SinglStrokeCfgFlt"
-  - Name: StrokeChange
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PressMode.StrokeChange"
 - Name: PressStatus
   Type: PressStatus_TYP
   DataType: PressStatus_TYP
@@ -295,7 +76,6 @@ Children:
   - Name: Armed
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -304,7 +84,6 @@ Children:
   - Name: ClutchEngaged
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -313,7 +92,6 @@ Children:
   - Name: NotReady
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -322,7 +100,6 @@ Children:
   - Name: Number
     Type: RAEtherNetIPTag
     DataType: Int16
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -331,12 +108,279 @@ Children:
   - Name: Ready
     Type: RAEtherNetIPTag
     DataType: Boolean
-    Value: false
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
       Value: "PressStatus.Ready"
+- Name: PressMode
+  Type: PressMode_TYP
+  DataType: PressMode_TYP
+  Children:
+  - Name: AbsEncoderAdj
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.AbsEncoderAdj"
+  - Name: AutoSingleStroke
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.AutoSingleStroke"
+  - Name: Bar
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Bar"
+  - Name: Cont_AutoSS_COD
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Cont_AutoSS_COD"
+  - Name: Continuous
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Continuous"
+  - Name: ContOnDemand
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.ContOnDemand"
+  - Name: DieChange
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.DieChange"
+  - Name: Handwheel
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Handwheel"
+  - Name: InAProdCountMode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.InAProdCountMode"
+  - Name: Inch
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Inch"
+  - Name: MicroInch
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.MicroInch"
+  - Name: ModeChangeHoldout
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.ModeChangeHoldout"
+  - Name: Number
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Number"
+  - Name: Off
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Off"
+  - Name: Origin
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Origin"
+  - Name: Pendulum
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Pendulum"
+  - Name: PosTDC
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.PosTDC"
+  - Name: SetEncoder
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.SetEncoder"
+  - Name: Setup
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.Setup"
+  - Name: SingleStroke
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.SingleStroke"
+  - Name: SingleStrokeCapable
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.SingleStrokeCapable"
+  - Name: SinglStrokeCfgFlt
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.SinglStrokeCfgFlt"
+  - Name: StrokeChange
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PressMode.StrokeChange"
+- Name: DataCol_DINT
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [50]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DataCol_DINT"
+- Name: WeekPartCounter
+  Type: COUNTER
+  DataType: COUNTER
+  Children:
+  - Name: ACC
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeekPartCounter.ACC"
+  - Name: CD
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeekPartCounter.CD"
+  - Name: CU
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeekPartCounter.CU"
+  - Name: DN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeekPartCounter.DN"
+  - Name: OV
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeekPartCounter.OV"
+  - Name: PRE
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeekPartCounter.PRE"
+  - Name: UN
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "WeekPartCounter.UN"
+- Name: DataCol_REAL
+  Type: RAEtherNetIPTag
+  DataType: Float
+  ValueRank: OneDimension
+  ArrayDimensions: [80]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DataCol_REAL"
 - Name: ReasonForLastStop
   Type: ReasonForLastStop_TYP
   DataType: ReasonForLastStop_TYP
@@ -346,7 +390,6 @@ Children:
     DataType: Int32
     ValueRank: OneDimension
     ArrayDimensions: [7]
-    Value: [0,0,0,0,0,0,0]
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -355,7 +398,6 @@ Children:
   - Name: EventID
     Type: RAEtherNetIPTag
     DataType: Int32
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -364,7 +406,6 @@ Children:
   - Name: EventType
     Type: RAEtherNetIPTag
     DataType: Int16
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -373,7 +414,6 @@ Children:
   - Name: Priority
     Type: RAEtherNetIPTag
     DataType: Float
-    Value: 0.0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -382,7 +422,6 @@ Children:
   - Name: State
     Type: RAEtherNetIPTag
     DataType: Int16
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -391,76 +430,8 @@ Children:
   - Name: TaskID
     Type: RAEtherNetIPTag
     DataType: Int16
-    Value: 0
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
       Value: "ReasonForLastStop.TaskID"
-- Name: WeekPartCounter
-  Type: COUNTER
-  DataType: COUNTER
-  Children:
-  - Name: ACC
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Value: 0
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "WeekPartCounter.ACC"
-  - Name: CD
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "WeekPartCounter.CD"
-  - Name: CU
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "WeekPartCounter.CU"
-  - Name: DN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "WeekPartCounter.DN"
-  - Name: OV
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "WeekPartCounter.OV"
-  - Name: PRE
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    Value: 0
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "WeekPartCounter.PRE"
-  - Name: UN
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "WeekPartCounter.UN"

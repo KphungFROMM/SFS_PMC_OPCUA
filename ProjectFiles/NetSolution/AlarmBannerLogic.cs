@@ -10,6 +10,7 @@ using FTOptix.Alarm;
 using System.Collections.Generic;
 using System.Threading;
 using FTOptix.WebUI;
+using FTOptix.MicroController;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

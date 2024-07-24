@@ -20,12 +20,11 @@ Children:
         - Name: Node1
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/SFS_PMC_OPCUA/Model/PMCState"
+          Value: "/Objects/SFS_PMC_OPCUA/Model/PMC_General"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: NodeClass
             Type: PropertyType
             DataType: NodePointerNodeClass
@@ -33,12 +32,11 @@ Children:
         - Name: Node2
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/SFS_PMC_OPCUA/Model/PMCErrors"
+          Value: "/Objects/SFS_PMC_OPCUA/Model/PMC_Production"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: NodeClass
             Type: PropertyType
             DataType: NodePointerNodeClass
@@ -46,12 +44,11 @@ Children:
         - Name: Node3
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/SFS_PMC_OPCUA/Model/PMCComms"
+          Value: "/Objects/SFS_PMC_OPCUA/Model/PMC_Comms"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: NodeClass
             Type: PropertyType
             DataType: NodePointerNodeClass
@@ -71,16 +68,16 @@ Children:
           - Name: NodeClass
             Type: PropertyType
             DataType: NodePointerNodeClass
-            Value: 0
       - Name: PublishDynamicConfiguration
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
   - Name: MinimumMessageSecurityMode
     Type: PropertyType
     DataType: MessageSecurityModeEnum
-    Value: 0
   - Name: MinimumSecurityPolicy
     Type: PropertyType
     DataType: SecurityPolicyEnum
-    Value: 0
+  - Name: ProductURI
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "urn:FactoryTalkOptixHMI:FTOptixApplication"

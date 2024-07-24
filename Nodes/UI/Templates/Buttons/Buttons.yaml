@@ -38,7 +38,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: FillColor
       Type: BaseDataVariableType
       DataType: Color
@@ -156,7 +155,6 @@ Children:
     - Name: Path
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: ""
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -181,7 +179,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: VerticalAlignment
       Type: BaseVariableType
       DataType: VerticalAlignment
@@ -204,7 +201,7 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../PageSelected"
-        - Name: Pairs
+        - Name: ns=3;Pairs
           Type: BaseObjectType
           ModellingRule: None
           Children:
@@ -216,7 +213,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ModellingRule: None
-              Value: false
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
@@ -242,7 +238,6 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
       Children:
       - Name: DynamicLink
         Type: DynamicLink
@@ -267,7 +262,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -300,7 +294,7 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../PageSelected"
-        - Name: Pairs
+        - Name: ns=3;Pairs
           Type: BaseObjectType
           ModellingRule: None
           Children:
@@ -312,7 +306,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ModellingRule: None
-              Value: false
             - Name: Value
               Type: BaseDataVariableType
               DataType: Color
@@ -381,7 +374,6 @@ Children:
           - Name: ns=3;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
             Children:
             - Name: Kind
               Type: PropertyType
@@ -408,7 +400,6 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
               Children:
               - Name: DynamicLink
                 Type: DynamicLink
@@ -425,7 +416,6 @@ Children:
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
               ValueRank: ScalarOrOneDimension
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: MethodContainer2
           Type: BaseObjectType
           Children:
@@ -449,63 +439,50 @@ Children:
               Type: BaseDataVariableType
               DataType: VariablePointer
               Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
             - Name: Value
               Type: BaseDataVariableType
               DataType: Boolean
               Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-              Value: false
             - Name: ArrayIndex
               Type: BaseDataVariableType
               DataType: UInt32
               Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
               ValueRank: ScalarOrOneDimension
-              Value: 0
       - Name: EventArguments
         Type: MouseClickEvent
         Children:
         - Name: EventId
           Type: PropertyType
           DataType: ByteString
-          Value: ""
         - Name: EventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceNode
           Type: PropertyType
           DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
         - Name: SourceName
           Type: PropertyType
           DataType: String
-          Value: ""
         - Name: Time
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: ReceiveTime
           Type: PropertyType
           DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
         - Name: Message
           Type: PropertyType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-          Value: 0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -514,7 +491,6 @@ Children:
   - Name: PageNode
     Type: BaseDataVariableType
     DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
   - Name: PageIcon
     Type: BaseDataVariableType
     DataType: ResourceUri
@@ -526,7 +502,6 @@ Children:
   - Name: PageSelected
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
     Children:
     - Name: ExpressionEvaluator1
       Type: ExpressionEvaluator

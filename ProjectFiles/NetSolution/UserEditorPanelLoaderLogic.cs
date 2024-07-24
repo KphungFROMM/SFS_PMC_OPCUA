@@ -7,6 +7,7 @@ using FTOptix.Alarm;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.OPCUAServer;
+using FTOptix.MicroController;
 #endregion
 
 public class UserEditorPanelLoaderLogic : BaseNetLogic

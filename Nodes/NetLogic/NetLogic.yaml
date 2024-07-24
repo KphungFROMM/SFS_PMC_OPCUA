@@ -8,11 +8,9 @@ Children:
   - Name: Time
     Type: BaseDataVariableType
     DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: UTCTime
     Type: BaseDataVariableType
     DataType: DateTime
-    Value: "1601-01-01T00:00:00.0000000"
   - Name: CurrentLocale
     Type: BaseDataVariableType
     DataType: Boolean
@@ -32,12 +30,11 @@ Children:
   - Name: Heartbeat
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
     Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../Model/PMCComms/OPCUAServerHeartBeat"
+      Value: "../../../Model/PMC_Comms/OPCUAServerHeartBeat"
       Children:
       - Name: Mode
         Type: BaseVariableType

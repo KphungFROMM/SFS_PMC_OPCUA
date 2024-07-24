@@ -17,6 +17,7 @@ using FTOptix.CommunicationDriver;
 using FTOptix.Core;
 using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
+using FTOptix.MicroController;
 #endregion
 
 public class RoleStatus : BaseNetLogic

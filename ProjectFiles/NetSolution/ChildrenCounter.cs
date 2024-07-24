@@ -10,6 +10,7 @@ using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
+using FTOptix.MicroController;
 #endregion
 
 public class ChildrenCounter : BaseNetLogic

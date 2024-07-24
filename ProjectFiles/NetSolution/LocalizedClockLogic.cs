@@ -15,6 +15,7 @@ using FTOptix.DataLogger;
 using FTOptix.Alarm;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.MicroController;
 #endregion
 
 public class LocalizedClockLogic : BaseNetLogic

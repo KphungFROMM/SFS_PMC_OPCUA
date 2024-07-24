@@ -11,6 +11,7 @@ using FTOptix.Alarm;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.WebUI;
+using FTOptix.MicroController;
 #endregion
 
 public class LocaleComboBoxLogic : BaseNetLogic

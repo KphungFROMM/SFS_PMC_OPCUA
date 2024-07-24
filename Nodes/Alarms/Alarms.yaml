@@ -15,13 +15,12 @@ Children:
     Id: g=eb5a6318ee318c3773016e4ce83325d5
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
     Children:
     - Name: DynamicLink
       Id: g=cbfef9fc7ba675ff081a333771350814
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../Model/PMCComms/PLCCommsStatus"
+      Value: "../../../Model/PMC_Comms/PLCCommsStatus"
       Children:
       - Name: Mode
         Id: g=f6d88bd1c415b66de3d99e977737392d
@@ -48,3 +47,12 @@ Children:
     Type: BaseDataVariableType
     DataType: LocalizedText
     Value: {"LocaleId":"en-US","Text":"PMC V37 PLC Connection Lost"}
+  - Class: Reference
+    Target: ns=11;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=135
+    Direction: Forward
